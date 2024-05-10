@@ -2,8 +2,8 @@ const bottone = document.querySelector("button");
 
 
 bottone.addEventListener("click", function(){
-    let distanzaKm = parseFloat( this.querySelector("distanza [type= number]"));
-    let anni = parseInt( this.querySelector("anni[type= number]"));
+    let distanzaKm = parseFloat(document.querySelector("#distanza").value);
+    let anni = parseInt(document.querySelector("#anni").value);
     const PrezzoBiglietto = distanzaKm * 0.267113;
     function arrotondaInEccesso(prezzo) {
         return Math.ceil(prezzo * 100) / 100;
